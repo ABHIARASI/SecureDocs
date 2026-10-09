@@ -89,13 +89,26 @@ Typical examples include:
 
 **Security:** Never commit real API keys, database passwords, JWT secrets, or other credentials to GitHub. Keep `.env` out of version control and provide placeholder values in an `.env.example` file if needed.
 
+## Testing
+
+The backend includes automated tests covering:
+
+- User registration and authentication
+- User-level document access isolation
+- PDF upload validation
+- Document deletion
+
+Run the backend tests from the `backend` directory using:
+
+```bash
+pytest
+```
+
 ## Future Improvements
 
+- Add continuous integration (CI) to run tests automatically on every push.
+- Introduce deployment workflows.
+- Expand retrieval-quality evaluation and testing.
 - Add support for additional document formats.
-- Improve retrieval quality and evaluation.
-- Add document previews and richer search filters.
-- Add automated testing and deployment workflows.
-
-## Author
 
 Developed as a full-stack project exploring secure document management, semantic search, and Retrieval-Augmented Generation.
