@@ -1,0 +1,30 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+
+# Frontend dependencies and build files
+node_modules/
+dist/
+build/
+
+# Uploaded documents and local data
+uploads/*
+!uploads/.gitignore
+
+# Logs and editor files
+*.log
+.vscode/
+.DS_Store
+Thumbs.db
+# Backend uploaded files
+backend/uploads/*
+!backend/uploads/.gitignore
